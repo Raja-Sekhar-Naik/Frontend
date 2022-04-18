@@ -1,0 +1,69 @@
+import React from 'react'
+
+export default function Aboutus() {
+  return (
+<div>
+        <div class="container">
+  <div class="row">
+    <div class="col-4">
+      Column-1 for Image
+      <section className='cards'>
+          <figure className='card'>
+              <figcaption className='card-title'>YASWANTH</figcaption>
+              {/**CSS MOWA
+               * .cards{
+               * perspective:500px;
+               * }
+               * .cards{
+               * width:200px;
+               * height:250px;
+               * background:url('ne image link') center no-repeat;
+               * background-size:cover;
+               * border:1px solid
+               * rgba(255,255,255, .25);
+               * border-radius: 4px;
+               * position: relative;
+               * transform-style:preserve-3d;
+               * will-change :transform;
+               * transition:transform .5s;
+               * }
+               */}
+               .card:hover{
+                   transfrom: translatez(10px)
+                   rotateX(20deg) rotateY(30deg);
+
+               }
+               .card-title{
+                   color:#fff;
+                   position;absolute;
+                   top:50%;
+                   right:10px;
+                   transform:translateY(-50%);
+                   transition:transform .5s;
+               }
+               .card:hover .card-title{
+                   transform:translatez(50px);
+
+               }
+          </figure>
+      </section>
+    </div>
+    <div class="col-4">
+      Column-your Details
+
+    </div>
+    <div class="col-4">
+      Column---- ne social media apps
+      <div class="d-grid gap-2 col-6 mx-auto">
+      <a class="button" href="#" >Facebook</a><br />
+      <a class="button" href="#">Github</a><br />
+      <a class="button" href="#" >Instagram</a><br />
+      </div> 
+
+    </div>
+  </div>
+</div>
+    </div>
+  )
+}
+
